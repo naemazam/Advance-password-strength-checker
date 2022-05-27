@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #100e17;
+}
+
+#wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #181523;
+  border-radius: 6px;
+  padding: 0 90px 30px 90px;
+  width: 380px;
+}
+
+#svgWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+}
+
+svg {
+  width: 100%;
+  padding: 30px 30px 0 30px;
+}
+
+#sword-left, #sword-right, #wings, #crown {
+  opacity: 0;
+}
+
+#inputWrapper {
+  display: flex;
+  justify-content: center;
+  background: #100e17;
+  border-radius: 6px;
+  padding: 6px 18px 9px 18px;
+  position: relative;
+  width: 80%;
+  margin-top: 18px;
+}
+
+input {
+  font-size: 16px;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: 1px;
+  color: #31D17A;
+  background: #100e17;
+  outline: 0;
+  border: 0;
+  background: -webkit-linear-gradient(60deg, #0BF375, #0BDAF3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: 80%;
+  position: relative;
+  left: -20px;
+}
+
+button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border: 0;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  padding: 0 12px;
+  width: 50px;
+  font-size: 18px;
+  color: rgba(255,255,255,.8);
+  background: -webkit-linear-gradient(-60deg, #369C77 30%, #269C3E);
+  cursor: pointer;
+  transition: 150ms ease-in-out;
+}
+
+button:hover {
+  color: rgba(255,255,255,1);
+}
+
+#showPass {
+  display: none;
+}
+
+#instructions {
+  font-family: "Open Sans", sans-serif;
+  font-style: italic;
+  color: white;
+  font-size: 14px;
+  text-align: center;
+  color: #10F0E6;
+  margin-top: 30px;
+  opacity: .5;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  padding: 0;
+  list-style: none;
+  margin: 3px 0;
+  background: -webkit-linear-gradient(60deg, #e5316c, #fe8603);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media (max-height: 420px) {
+  #instructions {
+    display: none;
+  }
+}
